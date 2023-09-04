@@ -37,6 +37,11 @@
   }
   @include phone{
     height: 208px;
+
   }
 
+}
+
+.opacity-hover:hover{
+  opacity: 0.7;
 }
