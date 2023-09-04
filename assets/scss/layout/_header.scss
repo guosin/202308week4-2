@@ -1,0 +1,63 @@
+@include phone{
+  .container{
+    max-width: 100%;
+  }
+}
+.narbar{
+  background: #aa0601;
+  padding: 12px 0;
+  @include phone{
+      padding: 12px 0 0 0;
+      
+  }
+}
+.no-padding{
+  @include phone {
+      padding: 0 0;
+  }
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  @include phone{
+      flex-direction: column;
+  }
+}
+.nav-logo{
+  width: 80px;
+  @include phone{
+      margin-left: 15px;
+      margin-bottom: 12px;
+  }
+}
+.narbar-right{
+  display: flex;
+  align-items:center;
+  @include phone{
+      flex-wrap: wrap;
+  }
+}
+
+.narbar-item{
+  @include phone{
+      width: 50%;
+      border: 1px solid white;
+      text-align: center;
+      padding: 12px 0;
+  }
+}
+
+.narbar-a{
+  color: white;
+  font-size: 20px;
+  padding: 0 32px;
+  @include phone{
+      // padding: 0 0;
+      padding: 12px 60px;
+      font-size: 16px;
+      
+  }
+}
+.narbar-a:hover{
+  opacity: 0.7;
+}
